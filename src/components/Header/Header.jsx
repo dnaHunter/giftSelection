@@ -8,9 +8,9 @@ export default function Header() {
         <Link className="header__link-logo">
           <img src="https://placehold.co/50" alt="" className="header__logo" />
         </Link>
-        <Link className="header__navLink">SHOP</Link>
-        <Link className="header__navLink">DISCOVER</Link>
-        <Link className="header__navLink">HELP</Link>
+        <Link className="header__nav-link">SHOP</Link>
+        <Link className="header__nav-link">DISCOVER</Link>
+        <Link className="header__nav-link">HELP</Link>
       </nav>
       <nav className="header__right">
         <Link className="header__link-logo">
