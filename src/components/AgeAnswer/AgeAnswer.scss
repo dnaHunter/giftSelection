@@ -1,3 +1,17 @@
-.answer{
-  
+@use "../../styles/variables" as *;
+
+.answer {
+  width: min-content;
+  &__img {
+    width: 10rem;
+    //height: 10.5rem;
+  }
+  &__range {
+    background-color: $darkYellow;
+    margin: 0;
+    padding: 0.5rem 0;
+    position: relative;
+    top: -1rem;
+    border-radius: 10px;
+  }
 }

@@ -10,7 +10,7 @@ export default function AgeAnswer({ img, ageRange, setAge }) {
 
   return (
     <article onClick={handleClick} className="answer">
-      <img src={img} alt="" className="anwser__img" />
+      <img src={img} alt="" className="answer__img" />
       <p className="answer__range">{ageRange}</p>
     </article>
   );

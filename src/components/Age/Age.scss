@@ -22,13 +22,27 @@
 .age {
   display: flex;
   padding: 0 0.5rem;
+  gap: 1rem;
+  
+  &__positioning{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 
   &__questions {
     width: 100%;
+    max-width: 41rem;
     text-align: center;
   }
 
   &__title {
     font-size: 2rem;
+  }
+
+  &__questions-half {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
   }
 }
