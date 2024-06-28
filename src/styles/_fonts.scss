@@ -1,20 +1,23 @@
 @font-face {
   font-family: "Cerapro";
-  src: url("../assets/Demo_Fonts/Fontspring-DEMO-cerapro-regular.otf");
+  src: url("./assets/Demo_Fonts/Fontspring-DEMO-cerapro-regular.otf")
+    format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cerapro";
-  src: url("../assets/Demo_Fonts/Fontspring-DEMO-cerapro-bold.otf");
+  src: url("./assets/Demo_Fonts/Fontspring-DEMO-cerapro-bold.otf")
+    format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cerapro";
-  src: url("../assets/Demo_Fonts/Fontspring-DEMO-cerapro-medium.otf");
+  src: url("./assets/Demo_Fonts/Fontspring-DEMO-cerapro-medium.otf")
+    format("opentype");
   font-weight: 600;
   font-style: normal;
 }

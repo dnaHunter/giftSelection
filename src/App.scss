@@ -1,3 +1,5 @@
+@use "./styles/fonts" as *;
+
 *,
 *::before,
 *::after {
@@ -6,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Cerapro", sans-serif;
 }
 
 .footer {
