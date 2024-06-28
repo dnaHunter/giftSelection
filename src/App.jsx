@@ -12,7 +12,7 @@ function App() {
     <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/giftFinder" element={<FinderPage />} />
+        <Route path="/giftFinder/*" element={<FinderPage />} />
         <Route path="/results" element={<ResultsPage />} />
       </Routes>
       <img src={footer} alt="" className="footer" />
