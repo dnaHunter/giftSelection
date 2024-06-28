@@ -1,6 +1,7 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./FinderPage.scss";
 import { useState } from "react";
+import Age from "../../components/Age/Age";
 
 export default function FinderPage() {
   const [age, setAge] = useState(null);
@@ -8,13 +9,10 @@ export default function FinderPage() {
   const [pices, setPices] = useState(null);
   const [price, setPrice] = useState(null);
 
-  const navigate = useNavigate();
-  //navigate("age")
   return (
     <section className="finder">
-      <p> Finder</p>
       <Routes>
-        <Route path="age" element={<p>age</p>} />
+        <Route path="age" element={<Age setAge={setAge} />} />
         <Route path="theme" element={<p>theme</p>} />
         <Route path="pices" element={<p>pices</p>} />
         <Route path="price" element={<p>price</p>} />

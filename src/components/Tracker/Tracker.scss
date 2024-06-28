@@ -1,0 +1,32 @@
+@use "../../styles/variables" as *;
+
+.tracker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  &__bar {
+    background-image: linear-gradient($fadeyellow, $fadeyellow);
+    background-size: 2px 100%;
+    background-repeat: no-repeat;
+    background-position: 0.72rem 0rem;
+    height: min-content;
+  }
+
+  &__bubble {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 2.4rem 0;
+    background-color: $fadeyellow;
+    border-radius: 100px;
+
+    &--active{
+      background-color: $darkYellow;
+    }
+  }
+
+  &__names{
+    height: min-content;
+
+  }
+}
