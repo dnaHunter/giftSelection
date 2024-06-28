@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import "./FinderPage.scss";
 import { useState } from "react";
 
@@ -8,6 +8,8 @@ export default function FinderPage() {
   const [pices, setPices] = useState(null);
   const [price, setPrice] = useState(null);
 
+  const navigate = useNavigate();
+  //navigate("age")
   return (
     <section className="finder">
       <p> Finder</p>
