@@ -1,0 +1,65 @@
+@use "../../styles/variables" as *;
+
+.tracker {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  &__img {
+    height: 20rem;
+  }
+
+  &__labels {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--active {
+      font-weight: bold;
+    }
+  }
+}
+
+.themes {
+  display: flex;
+  padding: 0 0.5rem;
+  margin-bottom: 5rem;
+  gap: 3rem;
+
+  &__questions {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &__lists {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__option-title {
+    font-size: 1.5rem;
+    background-image: url("../../assets/lego__brick.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14.5rem;
+    height: 5rem;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__option {
+    background-color: $fadeyellow;
+    padding: 0.25rem 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+}
