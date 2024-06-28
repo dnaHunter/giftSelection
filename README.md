@@ -1,8 +1,9 @@
-# React + Vite
+# LEGO Gift Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a react.js project using react.js, vite and sass.
 
-Currently, two official plugins are available:
+To run this project make sure you have node installed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Run "npm install" to install all the dependecies.
+
+Run "npm run dev" to launch the server and click on the link in the terminal to the website.
