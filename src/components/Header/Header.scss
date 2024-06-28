@@ -13,6 +13,10 @@
     gap: 2rem;
   }
 
+  &__logo{
+    width: 3rem;
+  }
+
   &__nav-link {
     text-decoration: none;
     color: black;
@@ -21,6 +25,10 @@
       text-decoration: underline 2px;
       text-underline-offset: 0.25rem;
     }
+  }
+
+  &__icon{
+    width: 2rem;
   }
 
   &__right {
@@ -44,7 +52,6 @@
   }
 
   &__left{
-    
     height: 1rem;
   }
 }
