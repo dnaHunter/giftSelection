@@ -1,7 +1,8 @@
 import "./Theme.scss";
 import trackerImg from "../../assets/tracker2.png";
+import { Link } from "react-router-dom";
 
-export default function Theme() {
+export default function Theme({ setTheme, theme }) {
   const themes = [
     { title: "Vehicles and Technology", subThemes: ["Space", "Vehicles"] },
     {
@@ -17,6 +18,11 @@ export default function Theme() {
       subThemes: ["Disney", "Fantasy", "Film and TV", "Ninjas", "Star Wars"],
     },
   ];
+
+  function handleClick(event) {
+    event.currentTarget.classList.add("themes__option--selected");
+    setTheme([...theme, event.target.textContent]);
+  }
 
   return (
     <section className="themes">
@@ -40,7 +46,11 @@ export default function Theme() {
                 <h3 className="themes__option-title">{theme.title}</h3>
                 {theme.subThemes.map((sub) => {
                   return (
-                    <div key={sub} className="themes__option">
+                    <div
+                      key={sub}
+                      onClick={handleClick}
+                      className="themes__option"
+                    >
                       <p>{sub}</p>
                     </div>
                   );
@@ -49,6 +59,7 @@ export default function Theme() {
             );
           })}
         </section>
+        <Link className="themes__finish">FINISH</Link>
       </section>
     </section>
   );

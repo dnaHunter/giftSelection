@@ -26,6 +26,8 @@
   gap: 3rem;
 
   &__questions {
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -61,5 +63,27 @@
     padding: 0.25rem 0;
     margin-bottom: 0.5rem;
     font-weight: bold;
+
+    &:hover {
+      background-color: $hoveryellow;
+    }
+
+    &--selected {
+      background-color: $selectedYellow;
+
+      &:hover {
+        background-color: $selectedYellow;
+      }
+    }
+  }
+
+  &__finish {
+    background-color: $blue;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    align-self: flex-end;
+    margin: 0.5rem 0;
   }
 }
