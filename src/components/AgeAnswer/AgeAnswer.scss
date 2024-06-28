@@ -2,9 +2,10 @@
 
 .answer {
   width: min-content;
+  cursor: pointer;
   &__img {
     width: 10rem;
-    //height: 10.5rem;
+    
   }
   &__range {
     background-color: $darkYellow;
