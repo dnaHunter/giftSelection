@@ -3,7 +3,8 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import FinderPage from "./pages/FinderPage/FinderPage";
 import ResultsPage from "./pages/ResultsPage/ResultsPage"
 import Header from "./components/Header/Header";
-import "./App.scss"
+import footer from "./assets/footer.png"
+import "./App.scss";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/giftFinder" element={<FinderPage />} />
         <Route path="/results" element={<ResultsPage />} />
       </Routes>
+      <img src={footer} alt="" className="footer" />
     </BrowserRouter>
   );
 }

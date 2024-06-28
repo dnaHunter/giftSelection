@@ -1,8 +1,10 @@
+@use "../../styles/variables" as *;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffd530;
+  background-color: $darkYellow;
   padding: 0.5rem 3rem;
 
   &__left {
@@ -21,8 +23,26 @@
     }
   }
 
-  &__right{
+  &__right {
     display: flex;
     gap: 1rem;
+  }
+}
+
+.pathTrace{
+  display: flex;
+  gap: 1rem;
+
+  &__link{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__left{
+    height: 1rem;
   }
 }
