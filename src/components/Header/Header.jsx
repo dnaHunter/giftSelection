@@ -51,7 +51,7 @@ export default function Header() {
           <p className="pathTrace__text">LEGO Gift ideas</p>
           <img src={left} alt="" className="pathTrace__left"/>
         </Link>
-        <Link className="pathTrace__link">
+        <Link to="/" className="pathTrace__link">
           <p className="pathTrace__text">Gift Finder</p>
         </Link>
       </article>
